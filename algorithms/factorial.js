@@ -1,13 +1,20 @@
+// recursion
 function factorial(n){
-    let result = 1
-    console.log(`Calculating factorial(${n})`);
-
-    for (i=2; i<=n; i++){
-        console.log(`Multiplying result (${result}) by ${i}`);
-        result = result * i
+    if( n===0 || n===1){
+        return 1
     }
-    return result
+    // Recursive case: n! = n * (n-1)!
+    return n * factorial(n-1)
 }
+
+// function factorial(n){
+//     let result = 1
+
+//     for (i=2; i<=n; i++){
+//         result = result * i
+//     }
+//     return result
+// }
 
 console.log(factorial(0))
 console.log(factorial(4))
