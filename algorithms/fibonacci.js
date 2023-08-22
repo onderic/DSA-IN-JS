@@ -1,4 +1,11 @@
 // recursion
+function fibonacci(n){
+    if(n < 2){
+        return n
+    }
+    return fibonacci(n-1) + fibonacci(n-2)
+}
+
 
 // function fibonacci(x){
 //     const fib = [0,1]
@@ -12,7 +19,7 @@
 console.log(fibonacci(3))
 console.log(fibonacci(4))
 console.log(fibonacci(5))
-console.log(fibonacci(7))
+console.log(fibonacci(6))
 
 // Big O
 // O(n) --linear time
