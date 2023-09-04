@@ -22,3 +22,15 @@ console.log(squaredNumbers)
 
 const evenNumbers = numbers.filter((num) => num % 2 === 0)
 console.log(evenNumbers)
+
+// time complexities
+
+// insert/remove from end = O(1) constant
+// insert/remove from beginning = O(n) linear
+// Access = O(1) constant
+// Search = O(n) linear
+// Push/Pop = O(1) constant
+
+// Shift/unshift/concat/slice/splice =  O(n) linear
+
+// forEach/map/filter/reduce =  O(n) linear
