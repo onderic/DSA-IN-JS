@@ -49,7 +49,7 @@ class CircularQueue{
             let str =  ''
             for(i = this.front; i !== this.rear; i = (i+1) %
             this.capacity){
-                str += this.items[i] +  ''
+                str += this.items[i] + ''
             }
             str += this.items[i]
             console.log(str)
